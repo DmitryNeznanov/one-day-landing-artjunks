@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #b7b7b7;
+    --orange: #d9852c;
+  }
+  h1 {
+    @apply font-caslon font-normal text-[50px] md:text-[70px] lg:text-[80px];
+  }
+  h2 {
+    @apply font-inter font-bold text-[24px] md:text-[30px] lg:text-[40px];
+  }
+  h3 {
+    @apply font-inter font-bold text-[20px] md:text-[15px] lg:text-[25px];
+  }
+  body {
+    @apply bg-black;
+  }
+}
+@layer components {
+  .p-sm {
+    @apply font-inter font-medium text-[13px] lg:text-[15px];
+  }
+  .p-md {
+    @apply font-inter font-medium text-[15px];
+  }
+  .p-lg {
+    @apply font-inter font-medium text-[18px];
+  }
+  .button-primary {
+    @apply w-max px-[28px] py-[10px] block text-white font-inter font-medium text-[18px] bg-transparent border-[2px] border-white rounded-[10px];
+  }
+}
+@layer utilities {
+  .transition-width {
+    transition-property: width;
+    transition-timing-function: ease;
+    transition-duration: 500ms;
+  }
+}
